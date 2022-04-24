@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class teleporter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform teleportPlace;
+    public GameObject player;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        player.transform.position = teleportPlace.transform.position;
     }
 }
+
