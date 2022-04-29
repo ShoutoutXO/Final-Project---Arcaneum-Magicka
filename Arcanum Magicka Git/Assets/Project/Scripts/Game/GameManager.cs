@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
     [Header("Game:")]
     public Player player;
     public GameObject enemyspawner;
+    public GameObject path;
     [Header("UI:")]
     public Text ammoText;
+    //public Image healthBar;
     public Text healthText;
     public Text enemyText;
     public Text winText;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         ammoText.text = "Ammo: " + player.Ammo;
+        //healthBar.initialHealth = player.Health;
         healthText.text = "Health: " + player.Health;
         
         int killedenemies = 0;
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
         if(killedenemies == 0)
         {
             winText.gameObject.SetActive(true);
+            Destroy(path);
         }
 
         // Lose Condition
