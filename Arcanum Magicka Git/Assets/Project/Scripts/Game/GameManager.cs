@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -51,8 +52,9 @@ public class GameManager : MonoBehaviour
         // Lose Condition
         if (player.Killed == true)
         {
-            loseText.gameObject.SetActive(true);
-            loseText.text = "You Lose!";
+            // loseText.gameObject.SetActive(true);
+            //loseText.text = "You Lose!";
+            SceneManager.LoadScene(2);
         }
     }
 }

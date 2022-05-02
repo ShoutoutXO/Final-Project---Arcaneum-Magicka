@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mage2.unity
     guid: e6232ed6a63c82245b2d023e13881c4e
+  - enabled: 1
+    path: Assets/Scenes/Dead.unity
+    guid: ffa9cc0843b93024686a97327cfe75c4
+  - enabled: 1
+    path: Assets/Scenes/GameDone.unity
+    guid: b9ee745f1a9d8fc48b195a8e3ae50178
   m_configObjects: {}
