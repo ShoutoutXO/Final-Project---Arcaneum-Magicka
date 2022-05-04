@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pit : MonoBehaviour
 {
-    public Transform falling;
-    public GameObject player;
+    //public Transform falling;
+    //public GameObject player;
 
     void OnTriggerEnter(Collider other)
     {
-        player.transform.position = falling.transform.position;
+        //if (other.CompareTag("Pit"))
+        //{
+        SceneManager.LoadScene(2);
+        //}
     }
 }
-

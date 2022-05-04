@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mousy : MonoBehaviour
 {
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 10f;
     public Transform playerBody;
     float xRotation = 0f;
 

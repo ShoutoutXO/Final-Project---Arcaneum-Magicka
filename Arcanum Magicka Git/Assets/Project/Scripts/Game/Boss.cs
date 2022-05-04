@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Enemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     public int health = 5;
     public int damage = 5;
@@ -26,7 +27,7 @@ public class Enemy : MonoBehaviour
                     if (killed == false)
                     {
                         killed = true;
-                        Destroy(gameObject);
+                        SceneManager.LoadScene(3);
                         //OnKill();
                         //Destroy(gameObject);
                     }
