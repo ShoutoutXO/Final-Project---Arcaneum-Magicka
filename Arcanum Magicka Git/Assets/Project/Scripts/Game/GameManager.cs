@@ -45,8 +45,8 @@ public class GameManager : MonoBehaviour
         // Win Condition
         if(killedenemies == 0)
         {
-            winText.gameObject.SetActive(true);
             Destroy(path);
+            //winText.gameObject.SetActive(true);
         }
 
         // Lose Condition
