@@ -38,7 +38,7 @@ public class BossAtt : Boss
         {
             shootingTimer = shootingInterval;
 
-            GameObject bullet = Od.Instance.GetBullet(false);
+            GameObject bullet = dabea.Instance.GetBullet(false);
             bullet.transform.position = transform.position;
             bullet.transform.forward = (player.transform.position - transform.position).normalized;
 
