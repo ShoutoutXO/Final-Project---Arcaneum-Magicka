@@ -5,7 +5,7 @@ using UnityEngine;
 public class moving : MonoBehaviour
 {
     public CharacterController controller;
-    public float speed = 12f;
+    public float speed = 5f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
@@ -28,7 +28,7 @@ public class moving : MonoBehaviour
 
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -2;
         }
 
         float x = Input.GetAxis("Horizontal");

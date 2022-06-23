@@ -8,7 +8,7 @@ ModelImporter:
     second: mixamo.com
   externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -76,6 +76,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
+  - 2ed7a06752ced884cb3f6488d9f2da14
   - 90132b5def3aad24a90766c57021dd8b
   - f75a5d104b5e59840a503dbb743d6255
   - 7d721d20445488d42a78f860fd74fc6c
